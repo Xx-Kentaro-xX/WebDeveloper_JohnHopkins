@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  text-decoration: none;
+}
+
+li{
+  text-decoration: none;
+
+}
+
+/* :link -> 訪れていないリンク */
+a:link{
+  color: green;
+}
+/* :visited -> 訪れたことのあるリンク */
+a:visited{
+  color: orange;
+}
+
+/* :hover -> マウスポイントをホバーしているとき */
+li#list_item_last > a:hover{
+  color: gray;
+}
+
+/* :nth-child(Number) -> 指定した要素のうちNumber番目の要素にスタイルを適応する */
+ul > li:nth-child(even){
+  background-color: lightskyblue;
+}
+
+/* :active -> マウスのクリック開始からクリック終了までの間 */
+a:active{
+  color: darkgreen;
+}
