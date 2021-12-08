@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* パターン1 スペースなしのセレクタの結合 
+   = 左のセレクタの中でも右のセレクタを満たすElementにスタイルが
+   適応される
+*/
+div.mainDescription{
+  font-size: 24px;
+  color: orange;
+}
+
+li#list_item_last{
+  color: red;
+}
+
+/* パターン２ 不等号(>)を用いたセレクタの指定 
+   = 左のセレクタの直接の子要素である右のセレクタにスタイルが適応される
+   (*間接的な子要素の場合は適応されない)
+*/
+div > h1{
+  font-size: 20px;
+  color: gray;
+}
+
+/* パターン3 スペースありのセレクタの結合
+   =すべての子要素(間接を含む)に対してスタイルが適応される
+*/
+
+div div{
+  background-color: lightseagreen;
+}
