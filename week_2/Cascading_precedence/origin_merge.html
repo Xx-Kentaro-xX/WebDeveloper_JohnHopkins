@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="origin_merge.css">
+  <style>
+    #merge{
+      color: green;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Cascading Precedence Test</h1>
+
+
+  <h2 style="color:red;">Origin</h2>
+  <p>Origin is the situation that same style definistions existing on different places. <br>
+     For instance, one is on style tags on HTML head tag and another is external css file.<br>
+     In this case, precedence will follow loading order of HTML and CSS file and last loaded definition will be applied.
+  </p>
+
+
+  <h2 id="merge">Merge</h2>
+  <p>Merge is the situation that different style definistions are extising on difference places.<br>
+     For instance, "color" is defined on style tags on HTML head tags and "font-wegith" is defined on external css file.<br>
+     In this case, both definitions will be kept.<br>
+  </p>
+</body>
+</html>
