@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="font-size.css">
+</head>
+<body>
+  <h2>Font-Size % | 親のフォントサイズに対しての比率指定</h2>
+  <p>
+    <!-- ブラウザのデフォルトサイズ(16px) -->
+    <div>Default</div>
+     <!-- 親のフォントサイズに対して対して200%(=16*2 ->32px) -->
+    <div style="font-size: 200%;">200%
+       <!-- 親のフォントサイズに対して400%(=32*4 -> 128)-->
+      <div style="font-size: 400%;">400%
+         <!-- 親のフォントサイズに対して50%(=128/2 -> 64px)-->
+        <div style="font-size: 50%;">50%</div>
+      </div>
+    </div>
+  </p>
+
+  <hr>
+
+  <h2>Font-Size em | 親のフォントサイズに対しての比率指定(=%と同じ)</h2>
+  <p>
+    <!-- ブラウザのデフォルトサイズ(16px) -->
+    <div>Default</div>
+     <!-- 親のフォントサイズに対して2倍(=16*2 -> 32px) -->
+    <div style="font-size: 2em;">2em
+       <!-- 親のフォントサイズに対して400%(=32*4 -> 128)-->
+      <div style="font-size: 4em;">4em
+         <!-- 親のフォントサイズに対して50%(=128/2 -> 64px)-->
+        <div style="font-size: 0.5em;">0.5em</div>
+      </div>
+    </div>
+  </p>
+
+  <hr>
+
+  <h2>Font-Size rem(=root em) | デフォルトのフォントサイズに対しての比率指定</h2>
+  <p>
+    <!-- ブラウザのデフォルトサイズ(16px) -->
+    <div>Default</div>
+     <!-- ブラウザのデフォルトサイズ対して2倍(=16*2 -> 32px) -->
+    <div style="font-size: 2rem;">2rem
+       <!-- ブラウザのデフォルトサイズ400%(=16*4 -> 64)-->
+      <div style="font-size: 4rem;">4rem
+         <!-- ブラウザのデフォルトサイズ50%(=16/2 -> 8px)-->
+        <div style="font-size: 0.5rem;">0.5rem</div>
+      </div>
+    </div>
+  </p>
+
+</body>
+</html>
