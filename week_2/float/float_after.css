@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+div{
+  margin: 20px;
+}
+
+
+#p_1_float{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  float:left;
+}
+
+#p_2_float{
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  float: right;
+}
+
+.cleared{
+  clear: both;
+}

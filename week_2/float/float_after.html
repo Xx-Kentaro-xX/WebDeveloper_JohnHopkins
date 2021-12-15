@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="float_after.css">
+</head>
+<body>
+  <div class="parent">
+    <p id="p_1_float"></p>
+    <p id="p_2_float"></p>
+    This is not normal HTML positioning flow since boxes are asigned "float" properties. <br>
+    Element which is put next to float elelment will flow around it. 
+    Floating element will be moved until touchgin parent element edge or boundery of another floating element edge.
+    <div class="cleared">
+      To avoid arounding floating element we need to set "clear" property. <br>
+      If "clear" property set with both, then floating will be removed on both left and right sides, so the element will be displayed like this. 
+  </div>
+  </div>
+</body>
+</html>

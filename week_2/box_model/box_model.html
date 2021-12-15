@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="box_model.css">
+</head>
+<body>
+  <div class="box_1">
+    In default, box height and width properties will be applied for only content box.<br>
+    Which means that padding, border and margin is out of scope, so total width and heigh calculation would be like below.
+    <br>
+    <br>
+    width = content box width + padding*2 + border*2 
+    height = content box height + padding*2 + border*2
+  </div>
+
+  <div class="box_2">
+    If we apply "box-sizing:border-box" properly for element, then width and height will include broder and padding on its value.<br>
+    In this case, value of box width width and height are fixed and content box size will be changed accordingly. 
+    Total width and heigh calculation would be like below.
+    <br>
+    <br>
+    content width = width value - padding*2 - border*2
+    content heigh = height value - padding*2 - border*2
+  </div>
+</body>
+</html>

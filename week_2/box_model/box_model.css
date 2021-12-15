@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.box_1{
+  width: 500px;
+  height: auto;
+  background-color: orange;
+  padding: 20px;
+  border: 5px solid lightblue;
+  margin: 40px;
+}
+
+.box_2{
+  width: 500px;
+  height: auto;
+  background-color: orange;
+  padding: 20px;
+  border: 5px solid lightblue;
+  margin: 40px;
+  box-sizing: border-box;
+}
